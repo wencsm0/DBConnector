@@ -1,0 +1,41 @@
+﻿<Window x:Class="Sql.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="MainWindow" Width="1920" Height="1080">
+    <DockPanel>
+        <Grid DockPanel.Dock="Top">
+            <ToolBarTray Orientation="Horizontal">
+                <ToolBar Band="1" BandIndex="1">
+                    <Menu>
+                        <MenuItem Header="连接" Background="#eef5fd">
+                            <MenuItem Header="Mysql" Click="MenuItem_Click"/>
+                            <MenuItem Header="Sqlite"/>
+                        </MenuItem>
+                        <MenuItem Header="编辑" Background="#eef5fd">
+                            <MenuItem Command="ApplicationCommands.Copy"/>
+                            <MenuItem Command="ApplicationCommands.Cut"/>
+                            <MenuItem Command="ApplicationCommands.Paste"/>
+                        </MenuItem>
+                    </Menu>
+                </ToolBar>
+            </ToolBarTray>
+        </Grid>
+
+        <Grid DockPanel.Dock="Left" Width="300">
+            <StackPanel>
+
+            </StackPanel>
+        </Grid>
+
+        <Grid DockPanel.Dock="Right"/>
+
+        <Grid DockPanel.Dock="Bottom"/>
+
+        <Grid>
+
+        </Grid>
+    </DockPanel>
+</Window>
