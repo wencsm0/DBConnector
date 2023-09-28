@@ -27,6 +27,7 @@ namespace Sql
             InitializeComponent();
         }
 
+
         private void Connection_To_Mysql_Click(object sender, RoutedEventArgs e)
         {
 
